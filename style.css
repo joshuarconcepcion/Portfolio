@@ -1,0 +1,66 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+    font-family: "WorkSans";
+    background-color: #DADAD9;
+}
+
+@font-face {
+    font-family: "WorkSans";
+    src: url("fonts/WorkSans-ExtraBold.ttf") format("truetype");
+}
+
+header {
+    margin: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-left {
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #424C55;
+    text-decoration: none;
+}
+
+#nav-right {
+    margin-right: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+#linkedin-button {
+    padding: 1em 2.75em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s;
+    background-color: #424C55;
+    color: #DADAD9;
+    font-family: "WorkSans";
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+button:hover {
+    box-shadow: 0 0 0 4px #DADAD9, 
+    0 0 0 8px #36382E;
+}
