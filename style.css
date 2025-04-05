@@ -2,7 +2,7 @@ body, html {
     height: 100vh;
     margin: 0;
     font-family: "WorkSans";
-    background-color: #DADAD9;
+    background-color: #FFFFFF;
 }
 
 @font-face {
@@ -37,7 +37,7 @@ ul {
 }
 
 a {
-    color: #424C55;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -53,14 +53,43 @@ a {
     border: none;
     border-radius: 10px;
     transition: 0.2s;
-    background-color: #424C55;
-    color: #DADAD9;
+    background-color: #000000;
+    color: #FFFFFF;
     font-family: "WorkSans";
     letter-spacing: 1px;
     font-size: 0.9em;
 }
 
 button:hover {
-    box-shadow: 0 0 0 4px #DADAD9, 
-    0 0 0 8px #36382E;
+    box-shadow: 0 0 0 4px #FFFFFF, 
+    0 0 0 8px #000000;
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-left {
+    width: 65%;
+}
+
+#main-right {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-figure-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    border-radius: 20px;
+}
+
+#figure {
+    width: 500px;
+    height: auto;
 }
