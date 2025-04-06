@@ -1,13 +1,21 @@
 body, html {
     height: 100vh;
     margin: 0;
-    font-family: "WorkSans";
+    font-family: "Poppins-Medium";
     background-color: #FFFFFF;
+    background-image: url("images/color-blur.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 @font-face {
     font-family: "WorkSans";
     src: url("fonts/WorkSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("fonts/Poppins-Medium.ttf");
 }
 
 header {
@@ -18,6 +26,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #nav-left {
@@ -30,6 +39,7 @@ nav {
     justify-content: space-around;
     width: 100%;
     font-size: 1.5em;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -51,11 +61,11 @@ a {
     padding: 1em 2.75em;
     cursor: pointer;
     border: none;
-    border-radius: 10px;
+    border-radius: 100px;
     transition: 0.2s;
     background-color: #000000;
     color: #FFFFFF;
-    font-family: "WorkSans";
+    font-family: "Poppins-Medium";
     letter-spacing: 1px;
     font-size: 0.9em;
 }
@@ -72,6 +82,18 @@ button:hover {
 
 #main-left {
     width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    font-size: 3em;
 }
 
 #main-right {
