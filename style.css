@@ -3,14 +3,11 @@ body, html {
     margin: 0;
     font-family: "Poppins-Medium";
     background-color: #FFFFFF;
-    background-image: url("images/color-blur.jpg");
+    background-image: url("images/v904-nunny-012.jpg");
     background-size: cover;
     background-position: center;
-}
-
-@font-face {
-    font-family: "WorkSans";
-    src: url("fonts/WorkSans-ExtraBold.ttf") format("truetype");
+    background-repeat: repeat;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -75,13 +72,18 @@ button:hover {
     0 0 0 8px #000000;
 }
 
+#landing-container {
+    display: flex;
+    flex-direction: column;
+}
+
 #main-container {
     display: flex;
     justify-content: space-between;
 }
 
 #main-left {
-    width: 65%;
+    width: 70vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +94,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 70%;
+    width: 65%;
     font-size: 3em;
 }
 
@@ -112,6 +114,33 @@ button:hover {
 }
 
 #figure {
-    width: 500px;
+    width: 30vw;
     height: auto;
+}
+
+#about-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile {
+    width: 25vw;
+    border-radius: 200px;
+}
+
+#about-right {
+    height: 75vh;
+    width: 50vw;
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
 }
