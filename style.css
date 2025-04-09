@@ -16,7 +16,7 @@ body, html {
 }
 
 header {
-    margin: 1em;
+    margin: 0.5rem;
 }
 
 nav {
@@ -24,6 +24,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    /*backdrop-filter: blur(40px);
+    border-radius: 30px;
+    position: fixed;
+    width: 100%;*/
 }
 
 #nav-left {
@@ -75,6 +79,8 @@ button:hover {
 #landing-container {
     display: flex;
     flex-direction: column;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 #main-container {
@@ -94,12 +100,12 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 65%;
+    width: 60%;
     font-size: 3em;
 }
 
 #main-right {
-    width: 35%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +146,14 @@ button:hover {
 #about-right {
     height: 75vh;
     width: 50vw;
-    font-size: 3em;
     display: flex;
     flex-direction: column;
+}
+
+#about-right h1 {
+    font-size: 3rem;
+}
+
+#about-right p {
+    font-size: 1.5rem;
 }
