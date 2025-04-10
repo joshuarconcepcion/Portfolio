@@ -2,12 +2,6 @@ body, html {
     height: 100vh;
     margin: 0;
     font-family: "Poppins-Medium";
-    background-color: #FFFFFF;
-    background-image: url("images/v904-nunny-012.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -15,8 +9,32 @@ body, html {
     src: url("fonts/Poppins-Medium.ttf");
 }
 
+@font-face {
+    font-family: "Terminal-Grotesque";
+    src: url("fonts/terminal-grotesque_open.otf");
+}
+
+@font-face {
+    font-family: "Office-Code";
+    src: url("fonts/OfficeCodePro-Light.otf");
+}
+
+@font-face {
+    font-family: "Instrument-Serif";
+    src: url("fonts/InstrumentSerif-Italic.ttf");
+}
+
+#landing-page {
+    background-image: url("images/v904-nunny-012.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
 header {
-    margin: 0.5rem;
+    padding-top: 1rem;
 }
 
 nav {
@@ -28,6 +46,7 @@ nav {
     border-radius: 30px;
     position: fixed;
     width: 100%;*/
+    height: 10vh;
 }
 
 #nav-left {
@@ -54,8 +73,16 @@ a {
 
 #nav-right {
     margin-right: 3%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+#home-icon {
+    display: block;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 #linkedin-button {
@@ -79,8 +106,6 @@ button:hover {
 #landing-container {
     display: flex;
     flex-direction: column;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
 }
 
 #main-container {
@@ -89,7 +114,7 @@ button:hover {
 }
 
 #main-left {
-    width: 70vw;
+    width: 65vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,12 +125,13 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 60%;
-    font-size: 3em;
+    width: 80%;
+    font-size: 3.5em;
+    padding-left: 5rem;
 }
 
 #main-right {
-    width: 40%;
+    width: 35vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,8 +141,6 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
-    border-radius: 20px;
 }
 
 #figure {
@@ -124,11 +148,23 @@ button:hover {
     height: auto;
 }
 
+#main-figure-container {
+    margin-right: 10vw;
+}
+
+#about-page {
+    background-image: url("images/color-blur.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    min-height: 100vh;
+}
+
 #about-me {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
 }
 
@@ -141,6 +177,7 @@ button:hover {
 #profile {
     width: 25vw;
     border-radius: 200px;
+    border: 3px solid black;
 }
 
 #about-right {
@@ -150,10 +187,26 @@ button:hover {
     flex-direction: column;
 }
 
-#about-right h1 {
+#about-text h1 {
     font-size: 3rem;
+    margin-bottom: 0.25rem;
 }
 
-#about-right p {
+#about-text p {
     font-size: 1.5rem;
+    margin-top: 0rem;
 }
+
+#about-text p, #about-text h1 {
+    padding-right: 1rem;
+}
+
+#bit-font {
+    font-family: "Terminal-Grotesque";
+    font-size: 3.5rem;
+}
+
+#se-font {
+    font-family: "Office-Code";
+    /*color: #569CD6*/
+} 
