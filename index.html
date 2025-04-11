@@ -9,53 +9,87 @@
     <link rel = "icon" type = "image/png" href = "images/favicon.png">
 </head>
 <body>
-    <section id = "landing-page">
-        <header>
-            <nav>
-                <div id = "nav-left">
-                    <div id = "nav-tabs-container">
-                        <ul id = "nav-tabs">
-                            <li><a href = "#my-work" class = "nav-tab">My Work</a></li>
-                            <li><a href = "about-me.html" class = "nav-tab">About Me</a></li>
-                            <li><a href = "contact-me.html" class = "nav-tab">Contact</a></li>
-                        </ul>
+    <main>
+        <section id = "landing-page">
+            <header id = "landing-header">
+                <nav>
+                    <div id = "nav-left">
+                        <div id = "nav-tabs-container">
+                            <ul id = "nav-tabs">
+                                <li><a href = "#my-work" class = "nav-tab">My Work</a></li>
+                                <li><a href = "#about-me" class = "nav-tab">About Me</a></li>
+                                <li><a href = "#contact-me" class = "nav-tab">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div id = "nav-right">
-                    <div id = "home-link">
-                        <a href = "index.html" class = "nav-tab">
-                            <img src = "images/home-alt-regular-24.png" alt = "Home" id = "home-icon">
-                        </a>
+                    <div id = "nav-right">
+                        <div id = "linkedin-button-container">
+                            <button id = "linkedin-button">LinkedIn →</button>
+                        </div>
                     </div>
-                    <div id = "linkedin-button-container">
-                        <button id = "linkedin-button">LinkedIn →</button>
-                    </div>
-                </div>
-            </nav>
-        </header>
+                </nav>
+            </header>
 
-        <section id = "landing-container">
-            <div id = "main-container">
-                <div id = "main-left">
-                    <section id = "hello">
-                        <h1>I'm Joshua, a <span id = "se-font">software engineer</span> based in San Diego!</h1>
+            <section id = "landing-container">
+                <div id = "main-container">
+                    <section id = "main-left">
+                        <section id = "hello">
+                            <h1>I'm Joshua, a <span class = "se-font">software engineer</span> based in San Diego!</h1>
+                        </section>
+                    </section>
+                    <div id = "main-right">
+                        <figure id = "main-figure-container">
+                            <img id = "figure" src = "images/3dart.svg" >
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id = "about-me">
+            <figure id = "about-left">
+                <img id = "profile" src = "/images/profile-picture.JPG">
+            </figure>
+
+            <section id = "about-right">
+                <header id = "about-text">
+                    <h1>A <span class = "bit-font">bit</span> about me</h1>
+                    <p>I’m a frontend developer who loves crafting clean, user-focused web experiences. 
+                        I graduated with a degree in Computer Science from San Diego State University and am currently diving deep into frontend frameworks and UI design.</p>
+                </header>
+                <div id = "about-skills">
+                    <section class = "skills-container" id = "hard-skills-container">
+                        <header>
+                            <h2>Hard Skills</h2>
+                        </header>
+                        
+                        <div id = "tech-stack">
+                            <img class = "tech-stack-icon" src="box-icons/bxl-html5.svg">
+                            <img class = "tech-stack-icon" src="box-icons/bxl-css3.svg">
+                            <img class = "tech-stack-icon" src="box-icons/bxl-javascript.svg">
+                            <img class = "tech-stack-icon" src="box-icons/bxl-python.svg">
+                            <img class = "tech-stack-icon" src="box-icons/bxl-java.svg">
+                            <img class = "tech-stack-icon" src="box-icons/bxl-c-plus-plus.svg">
+                            <img class = "tech-stack-icon" src="box-icons/bxl-visual-studio.svg">
+                            <img class = "tech-stack-icon" src="box-icons/bxl-github.svg">
+                        </div>
+                    </section>
+                    <section class = "skills-container" id = "soft-skills-container">
+                        <header>
+                            <h2>Soft Skills</h2>
+                        </header>
                     </section>
                 </div>
-                <div id = "main-right">
-                    <div id = "main-figure-container">
-                        <img id = "figure" src = "images/3dart.svg" >
-                    </div>
-                </div>
-            </div>
+            </section>
         </section>
-    </section>
 
-    <section id = "my-work">
+        <section id = "my-work">
 
-    </section>
+        </section>
 
-    <section id = "contact-me">
+        <section id = "contact-me">
 
-    </section>
+        </section>
+    </main>
 </body>
 </html>
