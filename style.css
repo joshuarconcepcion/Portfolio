@@ -25,7 +25,7 @@ body, html {
 }
 
 #landing-page {
-    background-image: url("images/v904-nunny-012.jpg");
+    background-image: url("images/color-blur.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -60,6 +60,7 @@ nav {
     width: 100%;
     font-size: 1.5em;
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 ul {
@@ -111,6 +112,7 @@ button:hover {
 #main-container {
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 #main-left {
@@ -149,11 +151,11 @@ button:hover {
 }
 
 #main-figure-container {
-    margin-right: 10vw;
+    margin-right: 6vw;
 }
 
 #about-page {
-    background-image: url("images/color-blur.jpg");
+    background-image: url("images/v904-nunny-012.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
