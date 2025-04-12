@@ -83,6 +83,7 @@ a {
     justify-content: space-between;
     align-items: center;
     display: flex;
+    gap: 2rem;
 }
 
 #linkedin-button {
@@ -128,8 +129,11 @@ button:hover {
     align-items: center;
     height: 100%;
     width: 80%;
-    font-size: 3.5em;
     padding-left: 5rem;
+}
+
+#hello h1 {
+    font-size: 3.5rem;
 }
 
 #main-right {
